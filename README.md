@@ -53,7 +53,7 @@ Split into:
 The dataset is loaded directly from tensorflow.keras.datasets.
 
 
-# Technologies Used
+# Technologies & Libraries Used
 
 Python
 

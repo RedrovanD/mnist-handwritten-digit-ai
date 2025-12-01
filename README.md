@@ -16,17 +16,17 @@ Convolutional Neural Network (CNN)
 
 # Objectives
 
-Load and explore the MNIST dataset
+-Load and explore the MNIST dataset
 
-Preprocess grayscale image data
+-Preprocess grayscale image data
 
-Train a baseline neural network (Dense layers)
+-Train a baseline neural network (Dense layers)
 
-Train a more advanced CNN
+-Train a more advanced CNN
 
-Compare both models performance
+-Compare both models performance
 
-Evaluate results using:
+-Evaluate results using:
 
 Accuracy
 

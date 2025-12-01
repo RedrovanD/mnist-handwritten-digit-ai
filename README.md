@@ -128,13 +128,9 @@ or
 open it in VS Code with the Jupyter extension.
 
 # Project Structure
-│── mnist_project.ipynb         # Full implementation
+│── mnist_project.ipynb          # Full implementation
 
 │── README.md                    # Project documentation
-
-│── images/                      # Plots & output visuals
-
-│── slides/                      # Presentation slides 
 
 │── requirements.txt             # Dependencies
 

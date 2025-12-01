@@ -57,7 +57,7 @@ Scikit-learn
 Jupyter Notebook / VS Code
 
 # Model Architectures
-🔹 1. Baseline Model – Fully Connected NN
+1. Baseline Model – Fully Connected NN
 
 Flattened input (784 units)
 
@@ -67,7 +67,7 @@ Dense(10, Softmax)
 
 Accuracy: ~97%
 
-🔹 2. Convolutional Neural Network (CNN)
+2. Convolutional Neural Network (CNN)
 
 Conv2D(32 filters) → MaxPooling2D
 
@@ -89,19 +89,19 @@ Baseline Dense NN	~0.97
 CNN	~0.99
 # Error Analysis
 
-Confusion matrix reveals small confusion between similar digits (e.g., 4 vs. 9, 3 vs. 5).
+Confusion matrix reveals small confusion between similar digits.
 
 Misclassified examples often include ambiguous or messy handwriting.
 
 (Insert your plots here if uploading to GitHub)
 
-✔ Baseline accuracy graph
+-Baseline accuracy graph
 
-✔ CNN accuracy graph
+-CNN accuracy graph
 
-✔ Confusion matrix
+-Confusion matrix
 
-✔ Misclassified digit samples
+-Misclassified digit samples
 
 # How to Run This Project
 1. Clone the Repository
@@ -129,10 +129,12 @@ Or open it in VS Code with the Jupyter extension.
 
 # Project Structure
 │── mnist_project.ipynb         # Full implementation
+
 │── README.md                    # Project documentation
-│── images/                      # Plots & output visuals (optional)
-│── slides/                      # Presentation slides (optional)
-│── requirements.txt             # Dependencies (optional)
+
+│── images/                      # Plots & output visuals
+
+│── slides/                      # Presentation slides 
 
 # Project Demo / Presentation
 
@@ -162,5 +164,7 @@ Use transfer learning for more complex datasets
 # Author
 
 David Redrovan
+
 CAP 4630 – Intro to Artificial Intelligence
+
 Fall 2025

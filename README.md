@@ -1,61 +1,48 @@
 # Handwritten Digit Recognition Using AI (MNIST Dataset)
 
-This project builds and evaluates an AI system capable of classifying handwritten digits (0–9) using the MNIST dataset, one of the most widely used benchmarks in machine learning and deep learning.
+A Deep Learning Project for CAP 4630 – Intro to Artificial Intelligence
 
-This work was completed as the Final Project for CAP 4630 – Intro to Artificial Intelligence.
+# Overview
 
-# Project Overview
+This project builds an end-to-end AI system that recognizes handwritten digits (0–9) using the MNIST dataset.
+Two models were implemented and compared:
 
-Handwritten digit recognition is a classic AI problem used in postal systems, bank check processing, and form digitization. The goal of this project is to design an AI model that can read 28×28 grayscale images of handwritten digits and correctly identify the corresponding digit.
-
-This project compares two different machine learning approaches:
-
-Baseline Fully Connected Neural Network
+Baseline Fully Connected Neural Network (Dense NN)
 
 Convolutional Neural Network (CNN)
 
+The goal is to demonstrate how model architecture impacts performance on image classification tasks and to visualize common errors using a confusion matrix and misclassified digits.
+
 # Objectives
 
--Load and explore the MNIST dataset
+Understand and explore the MNIST image dataset
 
--Preprocess grayscale image data
+Preprocess grayscale pixel data
 
--Train a baseline neural network (Dense layers)
+Train and evaluate a baseline Dense Neural Network
 
--Train a more advanced CNN
+Train and evaluate a Convolutional Neural Network
 
--Compare both models performance
+Compare performance using accuracy and error analysis
 
--Evaluate results using:
+Visualize results using plots, confusion matrix, and misclassified examples
 
-Accuracy
-
-Confusion matrix
-
-Misclassified examples
-
-Discuss limitations and future improvements
+Summarize findings and discuss limitations & future improvements
 
 # Dataset: MNIST
+Property	Value
+Total Images	70,000
+Training Set	60,000
+Test Set	10,000
+Image Size	28 × 28 pixels
+Channels	Grayscale (1)
+Classes	10 (digits 0–9)
 
-70,000 images of handwritten digits
+The MNIST dataset is widely used as a benchmark for evaluating image recognition models.
 
-28×28 pixels, grayscale
+# Technologies & Libraries
 
-10 classes (digit labels 0–9)
-
-Split into:
-
-60,000 training images
-
-10,000 test images
-
-The dataset is loaded directly from tensorflow.keras.datasets.
-
-
-# Technologies & Libraries Used
-
-Python
+Python 3.9+
 
 TensorFlow / Keras
 
@@ -65,7 +52,115 @@ Matplotlib
 
 Seaborn
 
-Scikit-Learn
+Scikit-learn
 
-Jupyter Notebook
+Jupyter Notebook / VS Code
 
+# Model Architectures
+🔹 1. Baseline Model – Fully Connected NN
+
+Flattened input (784 units)
+
+Dense(128, ReLU)
+
+Dense(10, Softmax)
+
+Accuracy: ~97%
+
+🔹 2. Convolutional Neural Network (CNN)
+
+Conv2D(32 filters) → MaxPooling2D
+
+Conv2D(64 filters) → MaxPooling2D
+
+Flatten
+
+Dense(64, ReLU)
+
+Dense(10, Softmax)
+
+Accuracy: ~98–99%
+
+The CNN outperformed the baseline significantly due to its ability to learn spatial features such as edges, curves, and stroke patterns.
+
+# Results Summary
+Model	Test Accuracy
+Baseline Dense NN	~0.97
+CNN	~0.99
+# Error Analysis
+
+Confusion matrix reveals small confusion between similar digits (e.g., 4 vs. 9, 3 vs. 5).
+
+Misclassified examples often include ambiguous or messy handwriting.
+
+(Insert your plots here if uploading to GitHub)
+
+✔ Baseline accuracy graph
+
+✔ CNN accuracy graph
+
+✔ Confusion matrix
+
+✔ Misclassified digit samples
+
+# How to Run This Project
+1. Clone the Repository
+git clone https://github.com/<your-username>/mnist-handwritten-digit-classifier.git
+cd mnist-handwritten-digit-classifier
+
+2. Create a Virtual Environment (Recommended)
+python -m venv .venv
+source .venv/bin/activate    # Mac/Linux
+.venv\Scripts\activate       # Windows
+
+3. Install Requirements
+pip install -r requirements.txt
+
+
+If you don’t have a requirements file, install manually:
+
+pip install tensorflow numpy matplotlib seaborn scikit-learn
+
+4. Run the Notebook
+jupyter notebook mnist_project.ipynb
+
+
+Or open it in VS Code with the Jupyter extension.
+
+# Project Structure
+│── mnist_project.ipynb         # Full implementation
+│── README.md                    # Project documentation
+│── images/                      # Plots & output visuals (optional)
+│── slides/                      # Presentation slides (optional)
+│── requirements.txt             # Dependencies (optional)
+
+# Project Demo / Presentation
+
+📌 Add your video link here:
+https://your-link-here.com
+
+# Limitations
+
+Trained only on MNIST (clean, centered digits)
+
+Does not generalize to real-world handwriting without augmentation
+
+Only recognizes digits, not letters or sequences of text
+
+# Future Enhancements
+
+Apply data augmentation (rotation, shifting, noise)
+
+Experiment with deeper CNN architectures
+
+Try EMNIST to classify letters as well
+
+Extend to full handwritten words
+
+Use transfer learning for more complex datasets
+
+# Author
+
+David Redrovan
+CAP 4630 – Intro to Artificial Intelligence
+Fall 2025

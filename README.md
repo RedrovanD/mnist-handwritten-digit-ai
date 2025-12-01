@@ -36,7 +36,7 @@ Misclassified examples
 
 Discuss limitations and future improvements
 
-Dataset: MNIST
+# Dataset: MNIST
 
 70,000 images of handwritten digits
 
@@ -53,7 +53,7 @@ Split into:
 The dataset is loaded directly from tensorflow.keras.datasets.
 
 
-Technologies Used
+# Technologies Used
 
 Python
 
@@ -69,7 +69,7 @@ Scikit-Learn
 
 Jupyter Notebook
 
-Project Structure
+# Project Structure
 mnist_project.ipynb        # Full notebook with code, outputs, and results
 slides/                    # Presentation slides
 images/                    # Saved plots, confusion matrix, misclassified digits

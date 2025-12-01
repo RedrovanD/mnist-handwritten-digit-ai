@@ -116,12 +116,12 @@ source .venv/bin/activate    # Mac/Linux
 3. Install Requirements
 pip install -r requirements.txt
 
-install manually:
+or
 
-pip install tensorflow numpy matplotlib seaborn scikit-learn
+install manually:pip install tensorflow numpy matplotlib seaborn scikit-learn
 
 4. Run the Notebook
-jupyter notebook mnist_project.ipynb
+jupyter notebook mnist_handwritten_digit_classifier.ipynb
 
 
 Or open it in VS Code with the Jupyter extension.
@@ -134,6 +134,8 @@ Or open it in VS Code with the Jupyter extension.
 │── images/                      # Plots & output visuals
 
 │── slides/                      # Presentation slides 
+
+│── requirements.txt             # Dependencies
 
 # Project Demo / Presentation
 

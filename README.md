@@ -134,6 +134,9 @@ open it in VS Code with the Jupyter extension.
 
 │── Requirements.txt             # Dependencies
 
+# Project Presentation
+https://drive.google.com/file/d/1brBOOgWibHJIw34c9jVR4hZbnaQ37unv/view?usp=drive_link
+
 # Limitations
 
 Trained only on MNIST (clean, centered digits)

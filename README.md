@@ -71,6 +71,9 @@ Jupyter Notebook
 
 # Project Structure
 mnist_project.ipynb        # Full notebook with code, outputs, and results
+
 slides/                    # Presentation slides
+
 images/                    # Saved plots, confusion matrix, misclassified digits
+
 README.md                  # Project description

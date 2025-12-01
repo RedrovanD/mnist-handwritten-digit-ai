@@ -118,11 +118,10 @@ pip install -r requirements.txt
 
 or
 
-install manually:pip install tensorflow numpy matplotlib seaborn scikit-learn
+install manually: pip install tensorflow numpy matplotlib seaborn scikit-learn
 
 4. Run the Notebook
 jupyter notebook mnist_handwritten_digit_classifier.ipynb
-
 
 Or open it in VS Code with the Jupyter extension.
 

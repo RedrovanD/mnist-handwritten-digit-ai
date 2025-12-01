@@ -105,8 +105,8 @@ Misclassified examples often include ambiguous or messy handwriting.
 
 # How to Run This Project
 1. Clone the Repository
-git clone https://github.com/<your-username>/mnist-handwritten-digit-classifier.git
-cd mnist-handwritten-digit-classifier
+git clone https://github.com/RedrovanD/mnist-handwritten-digit-ai.git
+cd mnist-handwritten-digit-ai
 
 2. Create a Virtual Environment (Recommended)
 python -m venv .venv
@@ -116,8 +116,7 @@ source .venv/bin/activate    # Mac/Linux
 3. Install Requirements
 pip install -r requirements.txt
 
-
-If you don’t have a requirements file, install manually:
+install manually:
 
 pip install tensorflow numpy matplotlib seaborn scikit-learn
 

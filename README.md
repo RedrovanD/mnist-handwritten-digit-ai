@@ -132,11 +132,10 @@ open it in VS Code with the Jupyter extension.
 
 │── README.md                    # Project documentation
 
-│── requirements.txt             # Dependencies
+│── Requirements.txt             # Dependencies
 
 # Project Demo / Presentation
 
-📌 Add your video link here:
 https://your-link-here.com
 
 # Limitations
